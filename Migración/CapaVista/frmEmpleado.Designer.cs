@@ -34,11 +34,10 @@ namespace CapaVista
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.Txtsueldo = new System.Windows.Forms.TextBox();
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.BtnBuscar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnModificar = new System.Windows.Forms.Button();
+            this.BtnIngresar = new System.Windows.Forms.Button();
             this.txtIdEmpleado = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -46,6 +45,7 @@ namespace CapaVista
             this.rbtnActivo = new System.Windows.Forms.RadioButton();
             this.CmbPuesto = new System.Windows.Forms.ComboBox();
             this.CmbDepto = new System.Windows.Forms.ComboBox();
+            this.Txtsueldo = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,19 +113,8 @@ namespace CapaVista
             this.label4.TabIndex = 38;
             this.label4.Text = "Estatus Empleado";
             // 
-            // Txtsueldo
-            // 
-            this.Txtsueldo.Enabled = false;
-            this.Txtsueldo.Location = new System.Drawing.Point(305, 171);
-            this.Txtsueldo.Margin = new System.Windows.Forms.Padding(4);
-            this.Txtsueldo.Name = "Txtsueldo";
-            this.Txtsueldo.Size = new System.Drawing.Size(192, 22);
-            this.Txtsueldo.TabIndex = 39;
-            this.Txtsueldo.Tag = "";
-            // 
             // TxtNombre
             // 
-            this.TxtNombre.Enabled = false;
             this.TxtNombre.Location = new System.Drawing.Point(305, 22);
             this.TxtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.TxtNombre.Name = "TxtNombre";
@@ -149,38 +138,38 @@ namespace CapaVista
             this.BtnBuscar.UseVisualStyleBackColor = false;
             this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
-            // button1
+            // BtnModificar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(181)))), ((int)(((byte)(226)))));
-            this.button1.Enabled = false;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(22, 391);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 56);
-            this.button1.TabIndex = 128;
-            this.button1.Text = "Modificar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(181)))), ((int)(((byte)(226)))));
+            this.BtnModificar.Enabled = false;
+            this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnModificar.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnModificar.ForeColor = System.Drawing.Color.White;
+            this.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnModificar.Location = new System.Drawing.Point(22, 391);
+            this.BtnModificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnModificar.Name = "BtnModificar";
+            this.BtnModificar.Size = new System.Drawing.Size(153, 56);
+            this.BtnModificar.TabIndex = 128;
+            this.BtnModificar.Text = "Modificar";
+            this.BtnModificar.UseVisualStyleBackColor = false;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
-            // button2
+            // BtnIngresar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(181)))), ((int)(((byte)(226)))));
-            this.button2.Enabled = false;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(555, 391);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 69);
-            this.button2.TabIndex = 129;
-            this.button2.Text = "Ingresar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BtnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(181)))), ((int)(((byte)(226)))));
+            this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnIngresar.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIngresar.ForeColor = System.Drawing.Color.White;
+            this.BtnIngresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnIngresar.Location = new System.Drawing.Point(566, 385);
+            this.BtnIngresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnIngresar.Name = "BtnIngresar";
+            this.BtnIngresar.Size = new System.Drawing.Size(138, 69);
+            this.BtnIngresar.TabIndex = 129;
+            this.BtnIngresar.Text = "Ingresar";
+            this.BtnIngresar.UseVisualStyleBackColor = false;
+            this.BtnIngresar.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtIdEmpleado
             // 
@@ -206,6 +195,7 @@ namespace CapaVista
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Txtsueldo);
             this.groupBox1.Controls.Add(this.rbtnInactivo);
             this.groupBox1.Controls.Add(this.rbtnActivo);
             this.groupBox1.Controls.Add(this.CmbPuesto);
@@ -214,7 +204,6 @@ namespace CapaVista
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lblIDepa);
-            this.groupBox1.Controls.Add(this.Txtsueldo);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(109, 92);
@@ -226,7 +215,6 @@ namespace CapaVista
             // rbtnInactivo
             // 
             this.rbtnInactivo.AutoSize = true;
-            this.rbtnInactivo.Enabled = false;
             this.rbtnInactivo.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnInactivo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rbtnInactivo.Location = new System.Drawing.Point(402, 227);
@@ -242,7 +230,6 @@ namespace CapaVista
             // rbtnActivo
             // 
             this.rbtnActivo.AutoSize = true;
-            this.rbtnActivo.Enabled = false;
             this.rbtnActivo.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnActivo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rbtnActivo.Location = new System.Drawing.Point(288, 227);
@@ -257,7 +244,6 @@ namespace CapaVista
             // 
             // CmbPuesto
             // 
-            this.CmbPuesto.Enabled = false;
             this.CmbPuesto.FormattingEnabled = true;
             this.CmbPuesto.Location = new System.Drawing.Point(305, 72);
             this.CmbPuesto.Name = "CmbPuesto";
@@ -266,12 +252,20 @@ namespace CapaVista
             // 
             // CmbDepto
             // 
-            this.CmbDepto.Enabled = false;
             this.CmbDepto.FormattingEnabled = true;
             this.CmbDepto.Location = new System.Drawing.Point(305, 114);
             this.CmbDepto.Name = "CmbDepto";
             this.CmbDepto.Size = new System.Drawing.Size(192, 24);
             this.CmbDepto.TabIndex = 44;
+            // 
+            // Txtsueldo
+            // 
+            this.Txtsueldo.Location = new System.Drawing.Point(305, 171);
+            this.Txtsueldo.Margin = new System.Windows.Forms.Padding(4);
+            this.Txtsueldo.Name = "Txtsueldo";
+            this.Txtsueldo.Size = new System.Drawing.Size(192, 22);
+            this.Txtsueldo.TabIndex = 133;
+            this.Txtsueldo.Tag = "";
             // 
             // frmEmpleado
             // 
@@ -282,8 +276,8 @@ namespace CapaVista
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtIdEmpleado);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnIngresar);
+            this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.BtnBuscar);
             this.Name = "frmEmpleado";
             this.Text = "frmEmpleado";
@@ -301,11 +295,10 @@ namespace CapaVista
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox Txtsueldo;
         private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.Button BtnBuscar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnModificar;
+        private System.Windows.Forms.Button BtnIngresar;
         private System.Windows.Forms.TextBox txtIdEmpleado;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -313,5 +306,6 @@ namespace CapaVista
         private System.Windows.Forms.ComboBox CmbDepto;
         private System.Windows.Forms.RadioButton rbtnInactivo;
         private System.Windows.Forms.RadioButton rbtnActivo;
+        private System.Windows.Forms.TextBox Txtsueldo;
     }
 }
