@@ -16,7 +16,9 @@ namespace CapaVista
     public partial class frmNuevoPasaporte : Form
     {
 
+
         ClsControlador Cont = new ClsControlador();
+
 
         public frmNuevoPasaporte()
         {
